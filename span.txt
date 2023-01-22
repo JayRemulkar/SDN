@@ -1,0 +1,7 @@
+en
+conf t
+monitor session 1 source int f0/1
+monitor session 1 destination int f0/2
+end
+show monitor session 1
+show monitor detail

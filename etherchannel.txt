@@ -1,0 +1,24 @@
+Prac 7 etherchannel
+Info:
+
+
+Etherchannel is a port link aggregation technology Lor part-channel architecture used primarily on cisco Switches. It allows grouping of several physical Ethernet links to create one logical Ethernet link for the purpose of providing fault-tolerance and high speed links between Switches, routers and Secves.
+LACP (link Aggregation Control protocol) maintains EtherChannel Bundles (8 active & 8standby members). Load Balancing method in Ether channel is global Settings on the Switch.
+ Ether channel is used to provide fault tolerance, load sharing, increased bandwidth and redundancy between Switches, routers and Servers.
+
+Steps:
+Step 1: (Requirement)
+Take 3 Switches of 2960 and name it as S1, S2 and S3.
+
+Step 2: 
+Configure the basic Switch setting
+1) Now connect switch S1 to $2 with Giga Ethernet 0/1 to Giga Ethernet 0/1 cable
+ 2) Once again Connect switch $1 to $2 with Giga Ethernet 0/2 to Giga Ethernet 0/2 cable.
+ 3) Then Connect $1 to $3 with Fast Ethernet 0/21 to Fast Ethernet 0/21 cable.
+4) Once again Connect $1 to $2 with Fast Ethernet 0/22 to Fast Ethernet 0/22 cable. 
+5) Then Connect S2 to 53 with Fast Ethernet 0/23 to Fast Ethernet 0/23 cable 
+6) Once again Connect $2 to 53 with Fast Ethernet 0/24 to Fast Ethernet 0/24 cable.
+
+Step 3:
+1) Click on S1 and go to CLI command and Configure the Switch $1. 
+2) Similarly Configure the Switch $2 and Switch $3.

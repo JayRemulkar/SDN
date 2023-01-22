@@ -1,0 +1,30 @@
+Prac 10 ipsec
+
+Info:
+To Connect destinations with same IP network address or for low-level network segregation on Single hardware platform, VRF (VRF-like) is used.
+IPSec is Collection of protocols that provide encryption for Sensitive data & ensure end-to-end integrity of data.
+Generic Routing Encapsulation (GRE) was developed when Security was not primary Concern therefore GRE tunnels are often secured with Ipsec Encryption.
+2 ways to implement encryption over GRE tunnel is: 
+Crypto maps & Tunnel IPsec profile.
+IPsec site-to-Site VPNs
+ can only Send Unicast IP traffic so they don't Support routing protocols. that require multicast/broadcast communication
+ GRE
+ is a VPN tunneling technology that permits Unicast, multicast & broadcast traffic. GRE does not encrypt traffic.
+ GRE over IPsec provides Security & Support for routing protocols.
+
+
+Steps:
+Step 1: (Required Resources)
+1)	Take 3 Routers of 1941 and name them as R1, R2 and R3
+2)	Take 3 Switches of 2960-24TT and name them as $1, $2 and $3. 
+3)	Take 3 Machine of PC-PT and name them PCA, PC-B and PC-C
+Step 2: 
+Now connect router R1 to router R2 with serial cable 0/0/0 to serial able 00/1. And also connect Router R2 to router R3 with serial cable 0/0/1 to serial cable 0/0/0 
+Step 3:
+ Lets connect PC-A to switch S1 with Fast Ethernet0 to Fast Ethernet0/1 cable Now connect switch S1 to router R1 with Fast Ethernet0/2 to Fast Ehemet0/0 cable
+Step 4: 
+Now connect PC-B to Switch S2 with Fast Ethernet0 to Fast Ethernet0/1
+cable. And also connect switch S2 to router R2 with Fast Ethernet0/2 to Fast Ethernet0/0
+
+Step 5:
+ Now connect router R3 to switch $3 with Fast EthernetFa0/0 to Fast Ethernet0/2 cable. And also connect Switch S3 to PC-C with Fast Ethernet0/1 to Fast Ethernet0 cable.

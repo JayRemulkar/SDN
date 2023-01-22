@@ -1,0 +1,7 @@
+Router(config)#int f0/0
+Router(config-if)#ip flow ingress
+Router(config-if)#ip flow egress
+Router(config-if)#ip flow-export destination 10.0.0.2 99
+Router(config)#ip flow-export source f0/0
+Router(config)#end
+Router#show ip cache flow

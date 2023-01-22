@@ -1,0 +1,37 @@
+PRACTICAL 5
+
+INFO:
+
+Inter-VLAN routing is the ability to route or send traffic between VLANs  that are normally blocked by default . Switches and VIANS work at MAC address layer(Layer 2)
+Traffic can't be routed between VLANs at Layer2 based on MAC addresses .
+Inter-VLAN routing enables routers or layer3 Switch to route traffic between VIANS
+As network use case is common, network admins need to understand inter-VLAN routing. Inter VLAN routing is process of forwarding network traffic from one VIAN to another VLAN 
+3 inter VLAN routing Options:
+•	Legacy Inter VLAN routing 
+•	Router-on-a-stick
+•	Layer 3 Switch using switched virtual interfaces (SVIs)
+
+
+Steps:
+Step 1:(Required Resources)
+1) Take 1 Router of and give name R1 to it 
+2) Now take 2 Switches of 2960 and give name S1 and S2 to them 
+3) And last take 2 Machines and give name PC-A and PC-B to them Step 2:
+STEP2:
+1) Now connect router R1 to switch S1 with Fast Ethernet tar cable to Fast Ethernet 10/1 cable.
+ 2) Now connect switch $1 to switch $2 with Fast Ethernet fa0/2 cable to Fast Ethernet 10/1 cable.
+ 3) Now connect switch S1 to PC-A with Fast Ethernet fa0/3 cable to Fast Ethernet fa0 cable. 
+4) Now connect switch S2 to PC-B with Fast Ethernet fa0/2 cable to Fast Ethernet fa0 cable.
+
+Step 3:
+
+1) Now click on device PC-A, go to Desktop click on IP Config and add IP Address and Subnet mask to it. 
+2) Now click on device PC-B, go to Desktop click on IP Config and add IP Address and Subnet mask to it
+
+Step 4: 
+Click on switch S1 and go to CLI commands and Configure the switch S1 and add IP Address and subnet mask to it. 
+Step 5: 
+Click on switch S2 and go to CLI commands and Configure the switch S2 and add IP Address and subnet mask to it.
+
+Step 6: 
+Click on router R1 and go to CLI commands and Configure the router R1 and add IP Address and subnet mask to it.

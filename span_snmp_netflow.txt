@@ -1,0 +1,57 @@
+PRACTICAL 3
+
+Information:
+
+1.	SPAN (Switched Port Analyzer) is sometimes called port mirroring or port monitoring, it selects network traffic for analysis by a network analyzer. SPAN is Switch Specific tools that Copies ethernet frames passing through switch parts and send these frames out to Specific port.
+2.	SNMP protocol allows to remote monitor & control network devices. Syslog is just an alerting mechanism - it won't allow to remotely take action when an alarm happens. syslog in often used for troubleshooting & debugging while SNMP messages are used for device management and reporting.
+3.	CISCO IOS Flexible Netflow is the next generation in flow technology. It Optimizes the network infrastructure reducing Operation costs and improving Capacity planning and Security Incident detection with increased flexibility & Scalability. It helps to Customize traffic identification. Ability to focus & monitor a wider information range. Enhanced network anomaly and security detection.
+
+STEPS:
+A)	Implement span technology
+Step 1: (Required Resources) 
+1) Take 2 Machines and named them as PC-1 & PC-2
+ 2) Now take 1 Switch of 2960 and name it as S1.
+Step 2:
+1) Now Connect PCI to Switch S with Fast Ethernet 0 cable to Fast Ethernet 0/1 Cable.
+ 2) Now connect switch S1, to PC-2 with Fast Ethernet 0/2 cable to Fast Ethernet 0.
+(Wait for few seconds it will turn into green light)
+Step 3:
+ Click on Switch S1 and go to the CLI Commands and Configure the Switch S1
+
+B) Implement SNMP & syslog
+Step 1:
+1) Take 1 Machine and give name PC-1 to it
+2) Then take 1 Switch of 2960 and give name S1 to it. 
+3) Take 2 Routers of 1841 and name them R1 and R2
+
+Step 2:
+1) Connect PC-1 to switch S1 with Fast Ethernet 0 to Fast Ethernet 0/1 cable. 
+2) Then Connect switch S1 to Router R1 with Fast Ethernet 0/2 to Fast Ethernet 0/0 cable.
+3) When Connect switch S1 to Router R2 with Fast Ethernet 0/3 to Fast Ethernet 0/0 cable. (Wait for few seconds it will turn into green light.) 
+Step 3
+1) Now click on device PC-1 go to desktop click on IP ConFIg and add IP Address and Subnet mask to it 
+2) click on R1 go to Config and select the Fast Ethernet 0, After that add the IP Address and Subnet Mask to it and turn it ON 
+3) Same Goes for router R2
+STEP 4
+1) After configuring the connection between the router and switches, take packet and try to make it flow 
+2) Then click on R1 and go to the CLI Commands and configure the router R1
+
+C Implement flexible NetFlow
+Step 1:
+1) Let us take 1 Server and name it as Server1. 
+2) Take 1 router of 1841 and give name R1 to it
+3) Take 1 switch of 2960 and give name S1 to it 
+4) Take 1 machine and name it as PC-1
+Step 2:
+1) Now let we connect those networks with dotted crossover line.
+ 2) First Server1 connect to router R1 with Fast Ethernet 0/0 to Fast Ethernet 0/0 cable. 
+3) Then connect router R1 to switch S1 with cable Fast Ethernet 0/1 to Fast
+4) Then connect switch S1 to PC-1 with Fast Ethernet 0/2 to Fast Ethernet cable
+(Wait for few seconds it will turn into green light.)
+Step 3:
+1) Now click on PC-1 go to the desktop and click on IP Config and add IP Address and subnet mask to it. 
+2) Click on R1 go to Config and select the Fast Ethernet 0/0 cable, after that add the IP Address and Subnet mask to it and turn it ON.
+3) Then click on server1 go to the desktop and add IPv4 Address and Subnet Mask to it.
+4) Click on R1 go to Config and select the Fast Ethernet 0/1, after that add IPv4 Address and Subnet mask to it and turn it ON.
+ 5) Then click on R1 and go to the CLI Commands and configure the router
+ (After Configuring the connection between the server1 and PC-1 take a packet and try to make it flow.)
